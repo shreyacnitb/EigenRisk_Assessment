@@ -15,7 +15,7 @@ inline bool starts_with(const string &s, const string &pref) {
     return s.size() >= pref.size() && s.compare(0, pref.size(), pref) == 0;
 }
 
-// return substring of the nth field (0-based) split by tab.
+// return substring of the nth field (0-based) split by comma.
 // If not found, returns empty string.
 string get_field_n(const string &line, size_t n) {
     size_t start = 0;
